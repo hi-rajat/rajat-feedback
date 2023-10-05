@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajat Feedback</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      h1 {
+        margin: 1rem;
+      }
+      body {
+        text-align: center;
+        background-color: #71a8c5;
+        color: white;
+      }
+      div {
+        margin: 2rem;
+      }
+      button {
+        padding: 1rem;
+        outline: invert;
+        border-color: white;
+        background-color: #ffffff;
+        color: #71a8c5;
+        font-weight: bold;
+        border-radius: 10%;
+      }
+      textarea {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Rajat Feedback Page</h1>
+    <p>
+      Your opinions matter to me. This is a platform for you to share your
+      thoughts, suggestions, or feedback with me anonymously. Please take a
+      moment to provide your valuable insights.
+    </p>
+    <form>
+      <div>
+        <label for="feedback">Type your feedback here</label>
+      </div>
+      <div>
+        <textarea
+          name="feedback"
+          id="feedback"
+          cols="100"
+          rows="5"
+          required
+          class="feedbackValue"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="feedbackList">
+      After providing the feedback, you can see all the feedback which is given
+      to Rajat here
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
